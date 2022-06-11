@@ -1,0 +1,6 @@
+import prelude;
+
+readline | split space | map [int] | reduce 0 [cur: add $cur] | print;
+
+[a,,b: cd "ef  ggggg" 'ffff \n' | g; b; f];
+[a;b;];

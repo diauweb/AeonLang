@@ -1,0 +1,5 @@
+print "Hello World!";
+
+readline | split " " | take 2 | map [int] | reduce 0 [v: add $v] | print;
+
+[with 1; [with 2] | add 3];] | reduce 0 [v: add $v] | print;
