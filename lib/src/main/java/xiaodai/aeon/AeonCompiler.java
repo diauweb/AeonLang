@@ -15,10 +15,11 @@ public class AeonCompiler {
         this.src = src;
     }
 
-    public void compile () {
+    public AeonProgram compile () {
         AeonLexer lexer = new AeonLexer(CharStreams.fromString(src));
         AeonParser parser = new AeonParser(new CommonTokenStream(lexer));
         AeonListener listener = new AeonListener();
         ParseTreeWalker.DEFAULT.walk(listener, parser.program());
+        return listener.toProgram();
     }
 }

@@ -1,5 +1,4 @@
-print "Hello World!";
+with "Hello World!" | print;
 
-readline | split " " | take 2 | map [int] | reduce 0 [v: add $v] | print;
+readline | split " " | take 2 | reduce 0 [v: add $v] | print;
 
-[with 1; [with 2] | add 3];] | reduce 0 [v: add $v] | print;

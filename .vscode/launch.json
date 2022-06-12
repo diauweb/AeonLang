@@ -2,6 +2,13 @@
     "version": "2.0.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "xiaodai.aeon.test.Main",
+            "projectName": "lib"
+        },
+        {
             "name": "Debug ANTLR4 grammar",
             "type": "antlr-debug",
             "request": "launch",
